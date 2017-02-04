@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ButtermilkCSS Framework Elements</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../buttermilk.css">
+</head>
+
+<body class="scrollbar gray">
+    <div class="container">
+        <div class="row stack">
+            <div class="eight">
+                <div class="box three">
+                    <h1>Buttermilk</h1>
+                    <h3 class="subtitle">v0.31</h3>
+                    <p class="subtitle">Responsive CSS framework.<br><b>No longer developed</b></p>
+                    <p class="subtitle">by <a href="https://github.com/theatomickiwi">theatomickiwi</a>, based on <a href="https://github.com/JamesKegel/MilkCSS">MilkCSS</a> by <a href="https://twitter.com/geekblogtv">@geekblogtv</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row stack">
+            <div class="eight">
+                <h2>Responsive Grid</h2>
+                <h4>8 column grid, scales fluidly through 5 media-query 'epochs',
+        <b>xl</b>, <b>lg</b>, <b>md</b>,
+        <b>sm</b>, and <b>xs</b>, with the latter being a full-width
+        mobile view.</h4>
+                <div class="code">
+                    <span class="lightest">&lt;!-- row of stackable boxes --&gt;<br /></span> &lt;div class="row stack"&gt;
+                    <br />
+                    <span class="lightest">&nbsp;&nbsp;&lt;!-- a box of one to eight blocks--&gt;
+          <br /></span> &nbsp;&nbsp;&lt;div class="box one"&gt;one&lt;/div&gt; &nbsp;&nbsp;&lt;div class="box seven inverse"&gt;seven&lt;/div&gt;
+                    <br /> &lt;/div&gt;
+                </div>
+            </div>
+            <div class="eight">
+                <div class="box three">box three</div>
+                <div class="box five inverse">box five inverse</div>
+            </div>
+        </div>
+        <div class="row stack">
+            <div class="eight">
+                <h2>Media Query Epochs</h2>
+                <h4>'Epochs' are human-readable viewport size names for showing and hiding divs
+        based on viewport size. Your current epoch will be displayed in the code-well
+        below.</h4>
+                <div class="code sm-hidden md-hidden lg-hidden xl-hidden">
+                    &lt;!-- You are currently in XS Viewport --&gt;
+                    <br />
+                    <br />
+                </div>
+                <div class="code xs-hidden md-hidden lg-hidden xl-hidden">
+                    &lt;!-- You are currently in SM Viewport --&gt;
+                    <br />
+                    <br />
+                </div>
+                <div class="code xs-hidden sm-hidden lg-hidden xl-hidden">
+                    &lt;!-- You are currently in MD Viewport --&gt;
+                    <br />
+                    <br />
+                </div>
+                <div class="code xs-hidden sm-hidden md-hidden xl-hidden">
+                    &lt;!-- You are currently in LG Viewport --&gt;
+                    <br />
+                    <br />
+                </div>
+                <div class="code xs-hidden sm-hidden md-hidden lg-hidden">
+                    &lt;!-- You are currently in XL Viewport --&gt;
+                    <br />
+                    <br />
+                </div>
+            </div>
+            <div class="eight">
+                <div class="box two">
+                    two
+                </div>
+                <div class="box six inverse">
+                    six
+                </div>
+            </div>
+            <div class="eight">
+                <div class="box three">
+                    three
+                </div>
+                <div class="box five inverse">
+                    five
+                </div>
+            </div>
+            <h2>Inverse Class</h2>
+            <h4 class="subtitle">Inverted color scheme for enhanced contrast.</h4>
+            <div class="code">
+                <span class="lightest">&lt;div class="row stack"&gt;<br /></span> &nbsp;&nbsp;&lt;div class="box four"&gt;
+                <br /> &nbsp;&nbsp;&lt;div class="box four inverse"&gt;
+                <br />
+                <span class="lightest">&lt;/div&gt;</span>
+            </div>
+            <div class="eight">
+                <div class="box four">
+                    box four
+                </div>
+                <div class="box four inverse">
+                    box four inverse
+                </div>
+            </div>
+            <div class="eight">
+                <div class="box five">
+                    five
+                </div>
+                <div class="box three inverse">
+                    three
+                </div>
+            </div>
+            <div class="eight">
+                <div class="box six">
+                    six
+                </div>
+                <div class="box two inverse">
+                    two
+                </div>
+            </div>
+            <div class="eight">
+                <div class="box seven">
+                    seven
+                </div>
+                <div class="box one inverse">
+                    one
+                </div>
+            </div>
+            <div class="eight">
+                <div class="box eight">
+                    eight
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="stack">
+            <h2>Common DOM Elements</h2>
+            <h4 class="subtitle">links, images, tables, divs, etc.</h4>
+            <div class="eight">
+                <div class="box four">
+                    <h2>&lt;a href=""&gt;</h2>
+                    <h3 class="subtitle">links and such</h3>
+                </div>
+                <div class="box four">
+                    <p>This would be an example of a <a href="#">hyperlink</a>. It should have no underline or hover-color, but be heavier than general text.</p>
+                </div>
+            </div>
+        </div>
+        <div class="eight">
+            <div class="box four">
+                <h2>&lt;button&gt;</h2>
+                <h3 class="subtitle">buttons and links</h3>
+            </div>
+            <div class="box four">
+                <button>button</button>
+                <button class="button-red">button-red</button>
+                <button class="button-blue">button-blue</button>
+                <button class="button-green">button-green</button>
+                <button class="button-yellow">button-yellow</button>
+                <p>These are normal-sized buttons.</p>
+                <button class="button-lg">button text
+                </button>
+                <button class="button-lg button-red">button-red</button>
+                <button class="button-lg button-blue">button-blue</button>
+                <button class="button-lg button-green">button-green</button>
+                <button class="button-lg button-yellow">button-yellow</button>
+                <p>These are large buttons.</p>
+            </div>
+        </div>
+    </div>
+    <div class="nine">
+        <div class="box four">
+            <h2>&lt;img&gt;</h2>
+            <h3 class="subtitle">images</h3>
+        </div>
+        <div class="box four">
+            <p>These are images with filters applied</p><img class="grayscale displayinlineblock two" src="http://i.imgur.com/Oj58Euj.jpg" />
+            <img class="blur displayinlineblock two" src="http://i.imgur.com/hu1gFI4.jpg" />
+            <img class="invert displayinlineblock two" src="http://i.imgur.com/EMWrpwR.jpg" />
+            <img class="sepia two" src="http://i.imgur.com/1EaccgF.jpg" /></div>
+    </div>
+    <div class="nine">
+        <div class="box four">
+            <h2>&lt;ul&gt;</h2>
+            <h3 class="subtitle">unordered lists</h3>
+        </div>
+        <div class="box four">
+            <p>Lists remove bullets, here is an exmple</p>
+            <ul>
+                <li>Shopping List</li>
+                <li style="list-style: none; display: inline">
+                    <ul>
+                        <li>Buttermilk</li>
+                        <li>Beer</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="box eight center">
+        <h2>Centering</h2>
+        <h4 class="subheading">Centering shouldn't be hard</h4>
+        <div class="eight box">
+            <p>You can center various blocks with ButtermilkCSS using the center class.</p>
+            <h4 class="center">I'm centered text with one class!</h4>
+            <img class="three center" src="https://i.imgur.com/ReUPx5C.png">
+            <div class="center three">
+                <p>I'm text in a centered div!</p>
+            </div>
+        </div>
+    </div>
+    <div class="nine">
+        <h2>Shadows</h2>
+        <h4 class="subheading">Truth in the real world</h4>
+        <div class="eight box">
+            <h4 class="shadow">I'm text with a shadow!</h4>
+            <div class="shadow">
+                <p>I'm text in a div with a shadow</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
